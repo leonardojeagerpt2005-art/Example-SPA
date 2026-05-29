@@ -90,16 +90,6 @@ src/
 
 ---
 
-## Application Flow Diagram
-
-The following diagram illustrates the navigation and workflow of the application.
-
-> Replace the image below with your own flowchart.
-
-![Application Flow Diagram](SPA Navigation and State-2026-05-29-022608_page-0001.jpg)
-
----
-
 ## Installation
 
 ### Clone the repository
