@@ -172,19 +172,6 @@ This project was developed to practice:
 
 ---
 
-## Screenshots
-
-### Home Page
-
-![Home Page](./assets/images/home.png)
-
-### Episodes Page
-
-![Episodes Page](./assets/images/episodes.png)
-
-### Locations Page
-
-![Locations Page](./assets/images/locations.png)
 
 ---
 
