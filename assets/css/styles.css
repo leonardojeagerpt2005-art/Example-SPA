@@ -1,0 +1,206 @@
+/* Estilos generales de toda la página */
+body {
+    margin: 0; /* Elimina los márgenes por defecto del navegador */
+    font-family: Arial, sans-serif; /* Define la fuente principal */
+    background: #f4f4f4; /* Color de fondo gris claro */
+}
+
+/* Barra de navegación */
+.navbar {
+    background: #202329; /* Fondo oscuro */
+    padding: 1rem; /* Espaciado interno */
+    display: flex; /* Organiza los elementos en fila */
+    gap: 1rem; /* Espacio entre enlaces */
+}
+
+/* Enlaces dentro del navbar */
+.navbar a {
+    color: white; /* Texto blanco */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+/* Contenido principal */
+main {
+    padding: 2rem; /* Espaciado interno */
+}
+
+/* Grid principal de tarjetas */
+.grid {
+    display: grid; /* Activa CSS Grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Crea columnas automáticas con mínimo 250px */
+    gap: 1rem; /* Espacio entre tarjetas */
+}
+
+/* Tarjeta individual */
+.card {
+    background: white; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta contenido que sobresalga */
+    box-shadow: 0px 3px 10px rgba(0,0,0,.1); /* Sombra suave */
+
+    /* Hace que todos los elementos internos se acomoden verticalmente */
+    display: flex;
+    flex-direction: column;
+
+    /* Permite que todas las tarjetas tengan la misma altura */
+    height: 100%;
+}
+
+/* Imagen de la tarjeta */
+.card img {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 260px; /* Altura fija para todas las imágenes */
+    
+    /* Recorta la imagen sin deformarla */
+    object-fit: cover;
+
+    /* Prioriza la parte superior de la imagen */
+    object-position: top;
+}
+
+/* Contenido interno de la tarjeta */
+.card-body {
+    padding: 1rem; /* Espaciado interno */
+
+    /* Hace que esta sección crezca y ocupe el espacio restante */
+    flex-grow: 1;
+}
+
+/* Formulario general */
+form {
+    display: flex; /* Activa Flexbox */
+    flex-direction: column; /* Elementos en columna */
+    gap: 1rem; /* Separación entre campos */
+    max-width: 400px; /* Ancho máximo */
+}
+
+/* Inputs, textarea y botones */
+input,
+textarea,
+button {
+    padding: 1rem; /* Espaciado interno */
+}
+
+/* Contenedor principal del formulario CRUD */
+.custom-form-card {
+    display: none; /* Oculto inicialmente */
+
+    background-color: #1f2226; /* Fondo oscuro */
+    border: 1px solid #3b3e45; /* Borde gris */
+    border-radius: 8px; /* Bordes redondeados */
+
+    padding: 25px; /* Espaciado interno */
+    margin: 20px 0 40px 0; /* Márgenes externos */
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Subtítulo del formulario */
+.form-subtitle {
+    color: #20b2aa; /* Color turquesa */
+    margin-bottom: 20px; /* Espacio inferior */
+    font-size: 1.5rem; /* Tamaño del texto */
+}
+
+/* Fila de campos del formulario */
+.form-group-row {
+    display: flex; /* Campos en fila */
+    gap: 20px; /* Espacio entre ellos */
+    margin-bottom: 15px; /* Separación inferior */
+
+    /* Permite que los elementos bajen de línea en pantallas pequeñas */
+    flex-wrap: wrap;
+}
+
+/* Contenedor individual de cada campo */
+.form-field {
+    flex: 1; /* Todos ocupan espacio proporcional */
+    min-width: 200px; /* Ancho mínimo */
+
+    display: flex;
+    flex-direction: column; /* Label arriba, input abajo */
+}
+
+/* Etiquetas de los campos */
+.form-field label {
+    color: #ffffff; /* Texto blanco */
+    margin-bottom: 8px; /* Separación con el input */
+    font-size: 0.9rem; /* Tamaño del texto */
+    font-weight: 500; /* Grosor medio */
+}
+
+/* Inputs y selects */
+.form-field input,
+.form-field select {
+    background-color: #2d3139; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+
+    border: 1px solid #4f5462; /* Borde gris */
+    padding: 10px; /* Espaciado interno */
+
+    border-radius: 6px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño del texto */
+
+    width: 100%; /* Ocupa todo el ancho disponible */
+    box-sizing: border-box; /* Incluye padding y borde en el ancho */
+}
+
+/* Efecto cuando el usuario selecciona un campo */
+.form-field input:focus,
+.form-field select:focus {
+    outline: none; /* Elimina borde azul por defecto */
+    border-color: #20b2aa; /* Cambia el borde a turquesa */
+}
+
+/* Botón para mostrar/ocultar formulario */
+.btn-toggle {
+    background-color: #28a745; /* Verde */
+    color: white; /* Texto blanco */
+
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado */
+
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano */
+
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Botón de envío */
+.btn-submit {
+    background-color: #007bff; /* Azul */
+    color: white; /* Texto blanco */
+
+    border: none; /* Sin borde */
+    padding: 12px 30px; /* Espaciado */
+
+    border-radius: 6px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano */
+
+    font-weight: bold; /* Negrita */
+    font-size: 1rem; /* Tamaño del texto */
+}
+
+/* Zona donde se ubica el botón de envío */
+.form-submit-zone {
+    text-align: right; /* Alinea el contenido a la derecha */
+    margin-top: 15px; /* Separación superior */
+}
+
+/* Línea divisoria entre secciones */
+.section-divider {
+    border-bottom: 1px solid #3b3e45; /* Línea gris */
+    margin: 30px 0; /* Espacio arriba y abajo */
+}
+
+/* Grid específico para personajes */
+.characters-grid {
+    display: grid; /* Activa CSS Grid */
+
+    /* Crea columnas automáticas de mínimo 250px */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+    gap: 20px; /* Espacio entre tarjetas */
+    width: 100%; /* Ocupa todo el ancho disponible */
+}

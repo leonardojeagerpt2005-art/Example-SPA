@@ -1,0 +1,69 @@
+<!-- assets/js/views/home.html -->
+
+<div class="home-container">
+    <h1 class="main-title">Rick and Morty Characters</h1>
+
+        <!-- El botón debe tener id="toggle-form-btn" -->
+    <button id="toggle-form-btn" class="btn-toggle">
+        + Crear Personaje Ficticio
+    </button>
+
+    <!-- El contenedor debe tener id="form-container" -->  
+    <div id="form-container" class="custom-form-card">
+        <h3 class="form-subtitle">Nuevo Personaje</h3>
+        
+        <form id="create-character-form">
+            <div class="form-group-row">
+                <div class="form-field">
+                    <label>Nombre *</label>
+                    <input type="text" id="form-name" placeholder="Ej. Rick Ficticio" required>
+                </div>
+                
+                <div class="form-field">
+                    <label>Especie *</label>
+                    <input type="text" id="form-species" placeholder="Ej. Human, Alien" required>
+                </div>
+            </div>
+
+            <div class="form-group-row row-three">
+                <div class="form-field">
+                    <label>Género *</label>
+                    <select id="form-gender" required>
+                        <option value="">Selecciona...</option>
+                        <option value="Male">Masculino</option>
+                        <option value="Female">Femenino</option>
+                        <option value="unknown">Desconocido</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label>Estado *</label>
+                    <select id="form-status" required>
+                        <option value="">Selecciona...</option>
+                        <option value="Alive">Vivo 🟢</option>
+                        <option value="Dead">Muerto 🔴</option>
+                        <option value="unknown">Desconocido ⚪</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label>URL de la Imagen *</label>
+                    <input type="url" id="form-image" placeholder="https://..." required>
+                </div>
+            </div>
+
+            <div class="form-submit-zone">
+                <button type="submit" class="btn-submit">Guardar Personaje</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- SEPARADOR -->
+    <div class="section-divider"></div>
+
+    <!-- CONTENEDOR PRINCIPAL DE TARJETAS -->
+    <!-- Este div DEBE estar aislado del formulario para que no se descuadre la cuadrícula -->
+    <div id="characters-container" class="characters-grid">
+        <!-- Aquí JavaScript inyectará las cards de forma limpia -->
+    </div>
+</div>
