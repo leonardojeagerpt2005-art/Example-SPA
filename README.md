@@ -96,7 +96,7 @@ The following diagram illustrates the navigation and workflow of the application
 
 > Replace the image below with your own flowchart.
 
-![Application Flow Diagram](./assets/images/flow-diagram.png)
+![Application Flow Diagram](SPA Navigation and State-2026-05-29-022608_page-0001.jpg)
 
 ---
 
@@ -133,9 +133,9 @@ http://localhost:5173
 Create a `.env` file in the root directory:
 
 ```env
-VITE_API_URL=https://rickandmortyapi.com/api
-VITE_CONTENT_TYPE=application/json
-VITE_TIME_OUT=5000
+VITE_API_URL=https:""
+VITE_CONTENT_TYPE=""
+VITE_TIME_OUT=""
 ```
 
 ---
